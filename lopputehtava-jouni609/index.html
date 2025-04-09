@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verkkokauppa - Home</title>
+    <title>Verkkokauppa - Etusivu</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,44 +13,44 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products/index.html">Products</a></li>
+            <li><a href="index.html" class="active" aria-c="page">Etusivu</a></li>
+            <li><a href="products/index.html">Tuotteet</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>Featured Products</h2>
+        <h2>Featured products</h2>
 
         <div class="products-grid">
             <!-- Product 111 -->
-            <div class="product">
-                <img src="products/111/kuva111.png" alt="Product 111" class="catalog-image">
+            <article class="product">
                 <a href="products/111/index.html">
+                    <img src="products/111/kuva111.png" alt="Product 111" class="catalog-image">
                     <h3>Product 111</h3>
-                    <p>Tuote 111</p>
+                    <p class="catalog-description">Tuote 111</p>
                     <p class="price">X€</p>
                 </a>
-            </div>
+            </article>
 
             <!-- Product 222 -->
-            <div class="product">
-                <img src="products/222/kuva222.png" alt="Product 111" class="catalog-image">
+            <article class="product">
                 <a href="products/222/index.html">
+                    <img src="products/222/kuva222.png" alt="Product 222" class="catalog-image">
                     <h3>Product 222</h3>
-                    <p>Tuote 222</p>
+                    <p class="catalog-description">Tuote 222</p>
                     <p class="price">X€</p>
                 </a>
-            </div>
+            </article>
 
             <!-- Product 333 -->
-            <div class="product">
-                <img src="products/333/kuva333.png" alt="Product 111" class="catalog-image">
+            <article class="product">
                 <a href="products/333/index.html">
+                    <img src="products/333/kuva333.png" alt="Product 333" class="catalog-image">
                     <h3>Product 333</h3>
-                    <p>Tuote 333</p>
+                    <p class="catalog-description">Tuote 333</p>
                     <p class="price">X€</p>
                 </a>
-            </div>
+            </article>
         </div>
     </main>
 
