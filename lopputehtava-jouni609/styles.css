@@ -1,3 +1,6 @@
+/*Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 /* Perustyylit */
 main {
     flex: 1;
@@ -15,6 +18,10 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: 'Open Sans';
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 /* Header & footer */
@@ -108,8 +115,9 @@ nav {
 }
 
 .product-image {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
+    margin: 0 auto 20px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
@@ -129,6 +137,7 @@ nav {
         justify-content: space-between;
         width: 100%;
         max-width: 1200px;
+        gap: 60px;
     }
 
 .product-details {
@@ -157,15 +166,42 @@ nav {
 
 /* Responsiivisuus */
 @media (max-width: 768px) {
-    .product-page {
-        padding: 20px 15px;
-    }
-
-    nav ul {
+    .product-page article {
         flex-direction: column;
+        gap: 20px;
     }
 
-    .products-grid {
-        grid-template-columns: 1fr;
+    .product-image {
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .product-details {
+        width: 100%;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .add-to-cart {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto 0;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-page {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .product-image {
+        border-radius: 10px;
+    }
+
+    .add-to-cart {
+        font-size: 1rem;
+        padding: 12px;
     }
 }
